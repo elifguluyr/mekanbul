@@ -9,7 +9,7 @@ export default axios.create({
   // Tüm API istekleri bu URL'e göre yapılır
   // baseURL: "http://localhost:3000/api" ,
   // GET isteği -> "http://localhost:3000/api/venues" olur
-  baseURL: "https://backend-virid-beta-u7668ileot.vercel.app/",
+  baseURL: "https://mekanbul-backend-omega-flame.vercel.app/api",
   
   // HTTP istek başlıkları (headers)
   // Her istekte otomatik olarak bu başlıklar gönderilir

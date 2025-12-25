@@ -394,6 +394,128 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "kayıtol",
+      "id": "ea045b9d-4487-4b0f-9b29-0afbcc07b374",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "name",
+              "value": "egu1",
+              "type": "text",
+              "uuid": "6aa8aa2e-2b2d-43fc-bcfd-9dfacea97aa3"
+            },
+            {
+              "key": "email",
+              "value": "egu1",
+              "type": "text",
+              "uuid": "ce03f308-1723-47b3-81b9-d3057e2d8601"
+            },
+            {
+              "key": "password",
+              "value": "egu1",
+              "type": "text",
+              "uuid": "77ccbc5f-cfec-47bc-8072-ea0202b50db7"
+            }
+          ]
+        },
+        "url": {
+          "raw": "localhost:3000/api/signup",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "signup"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "girişyap",
+      "id": "22651d6f-e98d-46e8-9c90-ff11f13a1548",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "email",
+              "value": "egu1",
+              "type": "text",
+              "uuid": "4d422b34-18d2-4f28-bb46-78aa21282d18"
+            },
+            {
+              "key": "password",
+              "value": "egu1",
+              "type": "text",
+              "uuid": "8f8360e3-60d0-41db-944b-9c6ba93718ed"
+            }
+          ]
+        },
+        "url": {
+          "raw": "localhost:3000/api/login",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "yorumyap",
+      "id": "5f9ca980-cf11-43a3-8d00-64743b24d192",
+      "request": {
+        "auth": {
+          "type": "bearer"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "rating",
+              "value": "3",
+              "type": "text",
+              "uuid": "3aaad5f9-e240-4d0d-9ddf-35a5eade28d0"
+            },
+            {
+              "key": "text",
+              "value": "idare eder",
+              "type": "text",
+              "uuid": "3e482197-824e-41fb-b432-61033295c399"
+            }
+          ]
+        },
+        "url": {
+          "raw": "localhost:3000/api/venues/69398dd8f528b94a40b9ecd0/comments",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "venues",
+            "69398dd8f528b94a40b9ecd0",
+            "comments"
+          ]
+        }
+      },
+      "response": []
     }
   ]
 }
