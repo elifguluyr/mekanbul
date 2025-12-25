@@ -1,0 +1,399 @@
+{
+  "info": {
+    "_postman_id": "e08a7ac3-a6b6-4499-a9d4-940a05e727ee",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "mekanlarılistele",
+      "id": "6df78b66-6368-43d5-8dff-2a60332cf5f7",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/api/venues?lat=37&long=30",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "venues"
+          ],
+          "query": [
+            {
+              "key": "lat",
+              "value": "37"
+            },
+            {
+              "key": "long",
+              "value": "30"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "mekançağır",
+      "id": "10e1a155-9c1c-40c4-94fb-83174013ee2c",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "yorumçağır",
+      "id": "55ec920d-b25e-43c6-8513-eac090ff89fa",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": []
+        },
+        "url": {
+          "raw": "localhost:3000/api/venues/69398dd8f528b94a40b9ecd0/comments/69398e4f892c51340e3a37ce",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "venues",
+            "69398dd8f528b94a40b9ecd0",
+            "comments",
+            "69398e4f892c51340e3a37ce"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "mekanekle",
+      "id": "2cb62b1d-130b-4dfc-907c-26f59a6021fb",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "name",
+              "value": "Bilgisayar Mühendisliği",
+              "type": "text"
+            },
+            {
+              "key": "address",
+              "value": "Süleyman Demirel Üniversitesi",
+              "type": "text"
+            },
+            {
+              "key": "foodanddrink",
+              "value": "Web",
+              "type": "text"
+            },
+            {
+              "key": "lat",
+              "value": "37",
+              "type": "text"
+            },
+            {
+              "key": "long",
+              "value": "25",
+              "type": "text"
+            },
+            {
+              "key": "hours[0][day]",
+              "value": "Pazartesi-Cuma",
+              "type": "text"
+            },
+            {
+              "key": "hours[0][open]",
+              "value": "9",
+              "type": "text"
+            },
+            {
+              "key": "hours[0][close]",
+              "value": "11",
+              "type": "text"
+            },
+            {
+              "key": "hours[0][isClosed]",
+              "value": "false",
+              "type": "text"
+            },
+            {
+              "key": "hours[1][day]",
+              "value": "Cumartesi",
+              "type": "text"
+            },
+            {
+              "key": "hours[1][open]",
+              "value": "9",
+              "type": "text"
+            },
+            {
+              "key": "hours[1][close]",
+              "value": "11",
+              "type": "text"
+            },
+            {
+              "key": "hours[1][isClosed]",
+              "value": "false",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "localhost:3000/api/venues",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "venues"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "yorumekle",
+      "id": "d4a8d28a-3b00-409c-be0b-79f7716f63d0",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "author",
+              "value": "Mehmet",
+              "type": "text"
+            },
+            {
+              "key": "rating",
+              "value": "5",
+              "type": "text"
+            },
+            {
+              "key": "text",
+              "value": "kahveler güzeeel",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "localhost:3000/api/venues/6939ac2443870e699aa7ed4b/comments",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "venues",
+            "6939ac2443870e699aa7ed4b",
+            "comments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "mekangücelle",
+      "id": "9893901a-94cd-442d-84e1-ce634737f6a7",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "name",
+              "value": "a",
+              "type": "text"
+            },
+            {
+              "key": "address",
+              "value": "a",
+              "type": "text"
+            },
+            {
+              "key": "foodanddrink",
+              "value": "a",
+              "type": "text"
+            },
+            {
+              "key": "lat",
+              "value": "3",
+              "type": "text"
+            },
+            {
+              "key": "long",
+              "value": "4",
+              "type": "text"
+            },
+            {
+              "key": "day1",
+              "value": "a",
+              "type": "text"
+            },
+            {
+              "key": "open1",
+              "value": "2",
+              "type": "text"
+            },
+            {
+              "key": "close1",
+              "value": "2",
+              "type": "text"
+            },
+            {
+              "key": "isClose1",
+              "value": "false",
+              "type": "text"
+            },
+            {
+              "key": "day2",
+              "value": "b",
+              "type": "text"
+            },
+            {
+              "key": "open2",
+              "value": "3",
+              "type": "text"
+            },
+            {
+              "key": "close2",
+              "value": "3",
+              "type": "text"
+            },
+            {
+              "key": "isClose2",
+              "value": "true",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "localhost:3000/api/venues/6939ac2443870e699aa7ed4b",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "venues",
+            "6939ac2443870e699aa7ed4b"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "yorumgüncelle",
+      "id": "cbfb80c1-f261-4e4b-b315-4df42f925fb7",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "author",
+              "value": "ali",
+              "type": "text"
+            },
+            {
+              "key": "rating",
+              "value": "4",
+              "type": "text"
+            },
+            {
+              "key": "text",
+              "value": "ben ali",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "localhost:3000/api/venues/6939ac2443870e699aa7ed4b/comments/6939c1224ec15490209b18c1",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "venues",
+            "6939ac2443870e699aa7ed4b",
+            "comments",
+            "6939c1224ec15490209b18c1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "mekansil",
+      "id": "661f2c70-ff78-4596-9919-569973d0daaa",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": []
+        },
+        "url": {
+          "raw": "localhost:3000/api/venues/6939ac2443870e699aa7ed4b",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "venues",
+            "6939ac2443870e699aa7ed4b"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "yorumsilme",
+      "id": "c002e1bd-906c-456c-aa86-ecad4333acb0",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": []
+        },
+        "url": {
+          "raw": "localhost:3000/api/venues/6939ac2443870e699aa7ed4b/comments/693aaa6b10e57edec90235af",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "venues",
+            "6939ac2443870e699aa7ed4b",
+            "comments",
+            "693aaa6b10e57edec90235af"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
